@@ -1,0 +1,24 @@
+// manifest.json
+{
+    "manifest_version": 2,
+    "name": "Screen Reader Integration",
+    "version": "1.0",
+    "description": "웹 스크린 리더와 네이티브 TTS 연동 예제",
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "permissions": [
+      "nativeMessaging"
+    ]
+  }
+  
+  {
+    "name": "com.example.screenreader",
+    "description": "Screen Reader Native Messaging Host",
+    "path": "C:\\path\\to\\screen_reader_host.exe",
+    "type": "stdio",
+    "allowed_origins": [
+      "chrome-extension://<your_extension_id>/"
+    ]
+  }
+  
